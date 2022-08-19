@@ -1,0 +1,385 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{% load static %}
+    <head>
+        <!-- META DATA -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		
+		
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+		
+       
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/font-awesome.min.css' %}">
+		
+		<!--linear icon css-->
+		<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+		
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/animate.css' %}">
+		
+		<!--hover.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/hover-min.css' %}">
+		
+		<!--vedio player css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/magnific-popup.css' %}">
+
+		<!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/owl.carousel.min.css' %}">
+		<link href="{% static 'assetss/css/owl.theme.default.min.css' %}" rel="stylesheet"/>
+
+
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/bootstrap.min.css' %}">
+		
+		<!-- bootsnav -->
+		<link href="{% static 'assetss/css/bootsnav.css' %}" rel="stylesheet"/>	
+        
+        <!--style.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/style.css' %}">
+        
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'assetss/css/responsive.css' %}">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700&amp;family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&amp;display=swap" rel="stylesheet">
+
+        <!-- own css  -->
+        
+        <!-- script -->
+        <!-- for carousel -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        
+		</head>
+		<style>
+            ul{
+                margin: 5px 0px;
+            }
+            .collapse{
+                justify-content: flex-end;
+            }
+            .navbar-light .navbar-nav .nav-link{
+                font-size: 14px;
+            }
+            .navbar h3{
+                padding: 13px;
+            }
+        </style>
+		<body>
+			<!--about-us start -->
+		
+<!-- Go back button -->
+{% include 'components/navigation.html' %}
+
+		<!-- From Our Founders -->
+		<section   class="testemonial">
+			<div class="container">
+				<div class="section-header text-center">
+					<h2>
+						<span>
+							From Our Founders
+						</span>
+					</h2>
+				</div><!--/.section-header-->
+				<div class="owl-carousel owl-theme" id="testemonial-carousel">
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'assetss/images/Kailash.jpg' %}" alt="img"/>
+							</div><!--/.home1-testm-img-->
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Kailash graduated from Middlebury College in the US with a degree in Computer Science and Economics. He will be joining Harvard Kennedy School in the near future for his graduate study. He has been working at Precision Development, a non-profit led by a Nobel laureate and other experts at the forefront of behavioral economics, where he spearheaded both technical and strategic fronts on the applications of satellite remote sensing for large-scale Randomized Controlled Trials (RCTs).<br> His experience also includes investment due diligence for a multimillion-dollar revolving fund that aims to enable thousands of smallholder farmers to improve their livelihoods through climate adaptation. 
+
+								</p>
+								<h3>
+									<a href="#">
+										Kailash Pandey
+									</a>
+								</h3>
+								<h4>Founder</h4>
+							</div><!--/.home1-testm-txt-->	
+						</div><!--/.home1-testm-single-->
+					</div><!--/.item-->
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'assetss/images/Himal.png' %}" alt="img"/>
+							</div><!--/.home1-testm-img-->
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+                                    Himal is currently a second-year student at Williams College, MA with an interest in the intersection between Neuroscience and Computer Science. He has worked in microbiology research with a Nobel laureate during his high school, and chronobiology research at college. Both Kailash and Himal are passionate about making systems-level changes in education equity.
+								</p>
+								<h3>
+									<a href="#">
+										Himal Pandey
+									</a>
+								</h3>
+								<h4>Founder</h4>
+							</div><!--/.home1-testm-txt-->	
+						</div><!--/.home1-testm-single-->
+					</div><!--/.item-->
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'assetss/images/client/testimonial1.jpg' %}" alt="img"/>
+							</div><!--/.home1-testm-img-->
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+								</p>
+								<h3>
+									<a href="#">
+										kevin watson
+									</a>
+								</h3>
+								<h4>CEO, Kingston</h4>
+							</div><!--/.home1-testm-txt-->	
+						</div><!--/.home1-testm-single-->
+					</div><!--/.item-->
+				</div><!--/.testemonial-carousel-->
+			</div><!--/.container-->
+	
+		</section><!--/.testimonial-->	
+
+
+		<!-- testemonial End -->
+
+		<!-- our mission-->
+					<div class="we-do-carousel">
+						<div class="row">
+							<div class="section-header text-center">
+								<h1>
+									<span>
+                                        <b>
+										Our Missions and Visions
+                                        </b>
+									</span>
+								</h1>
+							</div>
+                            <br>
+							<div class="section-header text-center">
+								<p>
+									The mission of Equity Bridge Nepal is to democratize Information on career paths and self-paced learning resources and develop soft-skills among high school students through interactive classroom exercises. Our long term vision is to accelerate the process of minimizing systemic inequity in educational outcomes. 
+
+								</p>
+							</div>
+							<!--our mission end-->
+
+
+
+							<!-- our motivation-->
+							<div class="we-do-carousel">
+								<div class="row">
+									<div class="section-header text-center">
+										<h1>
+                                            <b>
+											<span>
+												Motivation
+											</span>
+                                            </b>
+										</h1>
+									</div>
+									<div class="section-header text-center">
+										<p>
+											"Soft skills" and information on various career opportunities are critical to achieving job/grant/college outcomes after having passed the hurdle of developing core knowledge in a particular subject. Role models are also crucial in providing our youth the right guidance and confidence required at various crossroads of life. 
+										</p>
+									</div>
+									<!--our motivation end-->
+
+
+														<!-- our motivation-->
+														<div class="we-do-carousel">
+															<div class="row">
+																<div class="section-header text-center">
+																	<h1>
+                                                                        <b>
+																		<span>
+																			Our Model
+																		</span>
+                                                                        </b>
+																	</h1>
+																</div>
+																<div class="section-header text-center">
+																	<p>
+																		We aim to digitize two things: 
+                                                                            <p>1. Classroom teaching of soft-skills through interactive in-person games (Train-the-Trainer Model) with complementary online content<br> 
+                                                                                2. Early career exposure to students and talent identification for companies, primarily democratizing the following household questions: </p>
+                                                                                <center><p>
+                                                                                    <li>Career मा स्कोप के छ?</li>
+                                                                                    <li>के के सिक्न पर्छ?</li>
+                                                                                    <li>कसरी सफल बन्ने?</li>
+                                                                                </p>
+                                                                                </center>
+																	</p>
+																</div>
+																<!--our motivation end-->
+							
+						
+		
+
+		<br>
+
+		
+
+		<!--team start -->
+		<section id="team" class="team">
+			<div class="container">
+				<div class="team-details">
+					<div class="project-header team-header text-left">
+                        <center>
+						<h2>Our expert team</h2>
+                    </center>
+						<p>
+						</p>
+					</div><!--/.project-header-->
+					<div class="team-card">
+						<div class="container">
+							<div class="row">
+								<div class="owl-carousel  team-carousel">
+									<div class="col-sm-3 col-xs-12">
+										<div class="single-team-box team-box-bg-1">
+											<div class="team-box-inner">
+												<h3>Binayak Jha</h3>
+												<p class="team-meta"></p>
+												<a href="#" class="learn-btn">
+													learn more
+												</a>
+											</div><!--/.team-box-inner-->
+
+										</div><!--/.single-team-box-->
+									</div><!--.col-->
+									<div class="col-sm-3 col-xs-12">
+										<div class="single-team-box team-box-bg-2">
+											<div class="team-box-inner">
+												<h3>Shreeda Rijal</h3>
+												<p class="team-meta">
+												</p>
+												<a href="#" class="learn-btn">
+													learn more
+												</a>
+											</div><!--/.team-box-inner-->
+										</div><!--/.single-team-box-->
+									</div><!--.col-->
+									<div class="col-sm-3 col-xs-12">
+										<div class="single-team-box team-box-bg-3">
+											<div class="team-box-inner">
+												<h3>Ayush Gautam</h3>
+												<p class="team-meta">
+												</p>
+												<a href="#" class="learn-btn">
+													learn more
+												</a>
+											</div><!--/.team-box-inner-->
+										</div><!--/.single-team-box-->
+									</div>
+                                    <div class="col-sm-3 col-xs-12">
+										<div class="single-team-box team-box-bg-4">
+											<div class="team-box-inner">
+												<h3>मनिष भट्टराई</h3>
+												<p class="team-meta">
+												</p>
+												<a href="#" class="learn-btn">
+													learn more
+												</a>
+											</div><!--/.team-box-inner-->
+										</div><!--/.single-team-box-->
+									</div><!--.col-->
+									<div class="col-sm-3 col-xs-12">
+										<div class="single-team-box team-box-bg-5">
+											<div class="team-box-inner">
+												<h3>Leman Gautam</h3>
+												<p class="team-meta">
+													Head, Legal Advising
+												</p>
+												<a href="#" class="learn-btn">
+													learn more
+												</a>
+											</div><!--/.team-box-inner-->
+										</div><!--/.single-team-box-->
+									</div><!--.col-->
+								</div><!--/.team-carousel-->
+							</div><!--/.row-->
+						</div><!--/.container-->
+					</div><!--/.team-card-->
+				</div><!--/.team-details-->
+			</div><!--/.container-->
+
+		</section><!--/.team-->
+		<!--team end-->
+
+
+
+
+
+
+
+
+		<!-- jaquery link -->
+
+		<script src="{% static 'assetss/js/jquery.js' %}"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        
+        <!--modernizr.min.js-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		
+		<!--bootstrap.min.js-->
+        <script type="text/javascript" src="{% static 'assetss/js/bootstrap.min.js' %}"></script>
+		
+		<!-- bootsnav js -->
+		<script src="{% static 'assetss/js/bootsnav.js' %}"></script>
+		
+		<!-- for manu -->
+		<script src="{% static 'assetss/js/jquery.hc-sticky.min.js' %}" type="text/javascript"></script>
+
+		
+		<!-- vedio player js -->
+		<script src="{% static 'assetss/js/jquery.magnific-popup.min.js' %}"></script>
+
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+		<!-- isotope js -->
+		<!-- <script src="assetss/js/masonry.min.js"></script>
+		<script src="assetss/js/isotop-custom.js"></script> -->
+
+        <!--owl.carousel.js-->
+        <script type="text/javascript" src="{% static 'assetss/js/owl.carousel.min.js' %}"></script>
+		
+		<!-- counter js -->
+		<script src="{% static 'assetss/js/jquery.counterup.min.js' %}"></script>
+		<script src="assetss/js/waypoints.min.js"></script>
+		
+        <!--Custom JS-->
+        <script type="text/javascript" src="{% static 'assetss/js/jak-menusearch.js' %}"></script>
+        <script type="text/javascript" src="{% static 'assetss/js/custom.js' %}"></script>
+		
+
+    </body>
+	
+</html>
+
+

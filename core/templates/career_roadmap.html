@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Path</title>
+    <link rel="stylesheet" href="{% static 'assets/style.css' %}">
+    <link href="{% static 'assets/assets/css/theme.min.css' %}" rel="stylesheet" />
+    <!-- import fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .navbar-collapse{
+            border-top: none !important;
+        }
+    </style>
+</head>
+<body>
+    {% include 'components/navigation.html' %}
+    <br><br><br>
+    <!-- make a toggle menu at the top side and make option for toggling Resources and company tab  -->
+    <div role="group" class="mx-2 btn-group btn-group-sm btn-group-toggle toggler">
+        <label id="resource" class="btn btn-outline-secondary active" style="padding: 19px 5px;width: 112px;font-size: 15px;height: 62px;">
+            <input name="tab-select" type="radio" autocomplete="off" value="resources" >Resources
+        </label>
+        <label id="comp" class="btn btn-outline-secondary" style="padding: 19px 5px;width: 112px;font-size: 15px;height: 62px;">
+            <input name="tab-select" type="radio" autocomplete="off" value="company" checked="" >Company
+        </label>
+    </div>
+    <!-- toggle menu end -->
+
+    <!-- POPUP -->
+  <!--Technical Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- modal header  -->
+        <div class="modal-header"  style="padding: 2px;">
+            <div class="container-flex">
+                <button type="button" class="btn btn-secondary" onclick="frontend()" style="width:32%;" id="front-endd">Front-End Dev.</button>
+                <button type="button" class="btn btn-primary" onclick="backend()" style="width: 33%;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" id="back-endd">Back-End Dev.</button>
+                <button type="button" class="btn btn-primary" onclick="fullstack()" style="width: 32%;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" id="full-stackk">Full-Stack Dev.</button>
+            </div>
+        </div>
+        <div class="modal-body">
+          <div id="front-end">
+            <!-- write about how to become a front end web developer -->
+            <h3>Front End Web Developer</h3>
+            <hr>
+            <!-- steps to become a front end web developer: -->
+            <p>
+                Front End Web Developer is a career that requires a strong understanding of HTML, CSS, and JavaScript. You will need to be able to write clean, well-organized, and efficient code. <br> <br> You will also need to be able to work with a team to create a web application.
+            </p>
+            <hr>
+            <p>
+                <strong>Steps to become a Front End Web Developer:</strong>
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        <strong>
+                            Html and CSS : 
+                        </strong>
+                        <p>
+                            This is the language that you will use to write your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                              <!-- important links  -->
+                              <strong>
+                                W3-Schools :
+                              </strong>
+                                <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">W3-Schools Online Web Tutorials - HTML</a>
+                                <a href="https://www.w3schools.com/css/css_intro.asp" target="_blank">W3-Schools Online Web Tutorials - CSS</a>
+                                <strong>
+                                    Programiz :
+                                </strong>
+                                <a href="https://www.programiz.com/html">Programiz - Learn HTML</a>
+                                <strong>
+                                    CSS-Tricks :
+                                </strong>
+                                <a href="https://css-tricks.com/video-screencasts/58-html-css-the-very-basics/" target="_blank">CSS-Tricks - "HTML & CSS – The VERY Basics"</a>
+                                <strong>
+                                    Codecademy :
+                                </strong>
+                                <a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy - HTML</a>
+                                <a href="https://www.codecademy.com/learn/learn-css" target="_blank">Codecademy - CSS</a>
+                                <strong>
+                                    FreeCodeCamp :
+                                </strong>
+                                <a href="https://css-tricks.com/video-screencasts/58-html-css-the-very-basics/" target="_blank">FreeCodeCamp - Responsive Web Design Certification</a>
+                                <strong>
+                                    Code With Harry :
+                                </strong>
+                                <a href="https://www.youtube.com/watch?v=BsDoLVMnmZs" target="_blank">Code With Harry - HTML </a>
+                                <a href="https://www.youtube.com/watch?v=Edsxf_NBFrw" target="_blank">Code With Harry - CSS </a>
+
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                
+                <li>
+                    <p>
+                        <strong>
+                            JavaScript : 
+                        </strong>
+                        <p>
+                            This is the language that you will use to write your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="card card-body">
+                                <!-- important links  -->
+                                <strong>
+                                    W3-Schools :
+                                </strong>
+                                <a href="https://www.w3schools.com/js/default.asp" target="_blank">W3-Schools Online Web Tutorials - JavaScript</a>
+                                <strong>
+                                    Programiz :
+                                </strong>
+                                <a href="https://www.programiz.com/javascript" target="_blank">Programiz -Learn JavaScript</a>
+                                <strong>
+                                    Codecademy :
+                                </strong>
+                                <a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy - JavaScript</a>
+                                <strong>
+                                    FreeCodeCamp :
+                                </strong>
+                                <a href="https://www.freecodecamp.org/news/full-javascript-course-for-beginners/ " target="_blank">FreeCodeCamp - JavaScript</a>
+                                <strong>
+                                    Code With Harry :
+                                </strong>
+                                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ajyk081To1Cbt2eI5913SsL" target="_blank">Code With Harry - JavaScript </a>
+
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            React JS :
+                        </strong>
+                        <p>
+                            This language is a flexible JavaScript library for building reusable UI components. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample3">
+                            <div class="card card-body">
+                                <!-- important links  -->
+                                <strong>
+                                    W3-Schools :
+                                </strong>
+                                <a href="https://www.w3schools.com/react/" target="_blank">W3-Schools Online Web Tutorials - React JS</a>
+                                <strong>
+                                    Codecademy :
+                                </strong>
+                                <a href="https://www.codecademy.com/learn/react-101" target="_blank">Codecademy - React JS</a>
+                                <strong>
+                                    FreeCodeCamp :
+                                </strong>
+                                <a href="https://www.freecodecamp.org/news/full-javascript-course-for-beginners/ " target="_blank">FreeCodeCamp - React JS</a>
+                                <strong>
+                                    Code With Harry :
+                                </strong>
+                                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt" target="_blank">Code With Harry - React JS </a>
+
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            Teamwork : 
+                        </strong>
+                        <p>
+                            You will need to be able to work with a team to create a web application. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample4">
+                            <div class="card card-body">
+                                <strong>
+                                    Teamwork Skills :
+                                </strong>
+                                <a href="https://uwaterloo.ca/centre-for-teaching-excellence/teaching-resources/teaching-tips/tips-students/being-part-team/teamwork-skills-being-effective-group-member"> Teamwork Skills: Being an Effective Group Member</a>
+                            </div>
+                        </div>
+                    </p>
+                </li>
+
+            </ul>
+
+          </div>
+          <!-- backend  -->
+          <div id="back-end" style="display: none;">
+            <!-- skills are Python, Java, PHP, SQL, Git, Communication -->
+            <h3>Back End Web Developer</h3>
+            <hr>
+            <p>
+                Back End Web Developer is a career that requires a strong understanding of Python, Java, PHP, SQL, Git, and Communication. You will need to be able to write clean, well-organized, and efficient code. <br> <br> You will also need to be able to work with a team to create a web application.
+            </p>
+            <hr>
+            <p>
+                <strong>Steps to become a Back End Web Developer:</strong>
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        <strong>
+                            Python : 
+                        </strong>
+                        <p>
+                            This is the language that you will use to write your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            Java : 
+                        </strong>
+                        <p>
+                            This is the language that you will use to style your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample6" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample6">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            PHP : 
+                        </strong>
+                        <p>
+                            This is the language that you will use to write your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample7" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample7">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            SQL : 
+                        </strong>
+                        <p>
+                            This is the language that you will use to write your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample8" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample8">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+                    </p>
+
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            Git : 
+                        </strong>
+                        <p>
+                            This commands are used by developers for sending their repository to <a href="https://github.com" target="_blank">Github.</a> <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample9" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample9">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+                    </p>
+                </li>
+                <!-- Node.JS -->
+                <li>
+                    <p>
+                        <strong>
+                            Node.JS :
+                        </strong>
+                        <p>
+                            This is the language that you will use to write your web pages. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample10">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong>
+                            Communication : 
+                        </strong>
+                        <p>
+                           You will need to communicate with the client and understand their needs for the backend. <br><br>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample10" style="width: 100%;">
+                                Resources
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample10">
+                            <div class="card card-body">
+                              Will Update Soon !!
+                            </div>
+                        </div>
+                    </p>
+                </li>
+          </div>
+          <!-- FULL STACK WEB DEVELOPER -->
+          <div id="full-stack" style="display:none;">
+            <h3>Full Stack Web Developer</h3>
+            <hr>
+            <p>
+                <strong>Steps to become a Full Stack Web Developer:</strong>
+            </p>
+            You will need to Learn both skills of a front end web developer and a back end web developer.
+          </div>
+        </div>
+        <div class="modal-footer" style="justify-content: space-around !important;">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Non Technical Model -->
+  <div class="modal fade" id="nonModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <div id="finance">
+            Comming Soon
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Non 2 -->
+  <div class="modal fade" id="nonModal2" tabindex="-1" aria-labelledby="nonModalLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <div id="marketing">
+            Comming Soon
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Sidebar -->
+
+<div class="sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-large" onclick="closee()">&times;</button>
+    <center>
+        <b>
+            <h3>Technical Video</h3>
+        </b>
+    </center>
+    {% for link in video_link %}
+    <a href="#" class="w3-bar-item w3-button">
+        <div class="square">
+            <iframe src="{{ link.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="responsive-iframe"></iframe>
+        </div>
+        <p>{{ link.name }}</p>
+    </a>
+    {% endfor %}
+    
+  </div>
+
+<!-- Non tech videos -->
+
+  <div class="sidebar2 w3-bar-block w3-border-right" style="display:none" id="NonTechSidebar">
+    <button class="w3-bar-item w3-large" onclick="closee2()">&times;</button>
+    <center>
+        <b>
+            <h3>Non-Technical Video</h3>
+        </b>
+    </center>
+    {% for link in non_technical_video_link %}
+    <a href="#" class="w3-bar-item w3-button">
+        <div class="square">
+            <iframe src="{{ link.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="responsive-iframe"></iframe>
+        </div>
+        <p>{{ link.name }}</p>
+    </a>
+    {% endfor %}
+    
+  </div>
+
+<!-- RESOURCES tree start -->
+<br><br><br><br>
+    <div class="body genealogy-body genealogy-scroll" id="resource_tree" style="display: block;">
+        <div class="genealogy-tree">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <div class="member-view-box">
+                            <div class="member-image">
+                               <!-- add icon  -->
+                                <div class="member-details">
+                                    <h3>Career Path</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- sub category of Career Paths - 1 -->
+                    <ul class="active">
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="member-view-box">
+                                    <div class="member-image">
+                                        <div class="member-detailss">
+                                            <h3 id="technical">Technical</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- sub category of Technical - 1 -->
+                                <ul>
+                                    {% for technical_sub_categories in technical_sub_categories %}
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="member-view-box">
+                                                    <div class="member-image">
+                                                        <div class="member-details" onfocus="showVideo('video');">
+                                                            <h3>{{ technical_sub_categories.name }}</h3>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a> 
+                                            <!-- if the sub category has minimum one sub category -->
+                                            
+                                            {% if technical_mini_sub_categories %}
+                                                <!-- sub category of Technical - 1 -->
+                                                <ul>
+                                                    {% for technical_mini_sub_categories in technical_mini_sub_categories %}
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                                <div class="member-view-box">
+                                                                    <div class="member-image">
+                                                                        <div class="member-detailss">
+                                                                            <h3 data-bs-toggle="modal" data-bs-target="#exampleModal">{{ technical_mini_sub_categories.name }}</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            {% if technical_sub_mini_sub_categories %}
+                                                            <ul>
+                                                                {% for technical_sub_mini_sub_categories in technical_sub_mini_sub_categories %}
+                                                                {% if technical_mini_sub_categories.name ==  technical_sub_mini_sub_categories.mini_sub_category_of.name %}
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="member-view-box">
+                                                                                <div class="member-image">
+                                                                                    <div class="member-detailss">
+                                                                                        <h3>{{ technical_sub_mini_sub_categories.name }}</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                
+                                                                {% endif %}
+
+                                                                {% endfor %}
+                                                            </ul>
+                                                            {% endif %}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                            
+                                        </li>
+                                    {% endfor %}
+                                    
+                                </ul>
+
+                            <!-- sub category of Technical - 2  -->
+                            <li>
+                                <!-- Non Technical  -->
+                                <a href="javascript:void(0);">
+                                    <div class="member-view-box">
+                                        <div class="member-image">
+                                            
+                                            <div class="member-detailss">
+                                                <h3 id="non-technical">Non-Technical</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a> 
+                                <ul>
+                                    {% for non_technical_sub_categories in non_technical_sub_categories %}
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="member-view-box" style="left: -9%;">
+                                                    <div class="member-image">
+                                                        <div class="member-detailss">
+                                                            {% if non_technical_sub_categories.name == 'Finance' %}
+                                                                <h3 data-bs-toggle="modal" data-bs-target="#nonModal">{{ non_technical_sub_categories.name }}</h3>
+                                                            {% else %}
+                                                            <h3 data-bs-toggle="modal" data-bs-target="#nonModal2"> {{ non_technical_sub_categories.name }}</h3>
+                                                            {% endif %}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a> 
+                                            <!-- if the sub category has minimum one sub category -->
+                                            
+                                            {% if non_technical_mini_sub_categories %}
+                                                <!-- sub category of Non-Technical - 1 -->
+                                                <ul>
+                                                    {% for non_technical_mini_sub_categories in non_technical_mini_sub_categories %}
+                                                        <li>
+                                                            <a href="javascript:void(0);">
+                                                                <div class="member-view-box">
+                                                                    <div class="member-image">
+                                                                        <div class="member-detailss">
+                                                                            <h3>{{ non_technical_mini_sub_categories.name }}</h3>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                            {% if non_technical_sub_mini_sub_categories %}
+                                                            <ul>
+                                                                {% for non_technical_sub_mini_sub_categories in non_technical_sub_mini_sub_categories %}
+                                                                {% if non_technical_mini_sub_categories.name ==  non_technical_sub_mini_sub_categories.mini_sub_category_of.name %}
+                                                                    <li>
+                                                                        <a href="javascript:void(0);">
+                                                                            <div class="member-view">
+                                                                                <div class="member-image">
+                                                                                    <div class="member-detailss">
+                                                                                        <h3>{{ non_technical_sub_mini_sub_categories.name }}</h3>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                {% endif %}
+                                                                {% endfor %}
+                                                            </ul>
+                                                            {% endif %}
+                                                        </li>
+                                                    {% endfor %}
+                                                </ul>
+                                            {% endif %}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        {% include 'components/footer2.html' %}
+    </div>
+
+<!-- RESOURCES tree end -->
+<!-- company popups -->
+{% for comp in company_info %}
+<!-- remove space from the name -->
+
+<div class="modal fade" id="id{{comp.id}}" tabindex="-1" role="dialog" aria-labelledby="{{comp.id}}Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-body" style="display: flex;">
+            <!-- divide it into two sections -->
+            <!-- first section -->
+            <div class="section-1">
+                <div id="engineering_section{{comp.id}}">
+                    <!-- add a logo too -->
+                    <div class="eng" style="display: flex;">
+                        <div class="logo-section">
+                            <img src="{{ comp.logo.url }}" alt=""  style="width: 50px;height: 50px;object-fit: contain;">
+                        </div>
+                        <h3 style="padding:10px 15px;padding-bottom:0px !important;">{{comp.name}} Group</h3>
+                    </div>
+                    <hr>
+                    <p>
+                        <div>
+                            <div class="card card-body">
+                              
+                              <center>
+                                <a class="btn btn-primary btn-xl"  href="{{comp.internship_link}}"  style="width: 100%;height: 64px;font-size: 20px;padding: 16px 11px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" target="_blank">
+                                    Apply for Cohort Program
+                                </a>
+                              </center>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- INTERNSHIP -->
+                        <div>
+                            <div class="card card-body">
+                              <center>
+                                <a class="btn btn-primary"  href="{{comp.internship_link}}"   style="width: 100%;height: 64px;font-size: 20px;padding: 16px 11px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" target="_blank">
+                                    Apply for Internship
+                                </a>
+                              </center>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+                <div id="fin_section{{comp.id}}" style="display:none;">
+                    <div class="eng" style="display: flex;">
+                        <div class="logo-section">
+                            <img src="{{ comp.logo.url }}" alt=""  style="width: 50px;height: 50px;object-fit: contain;">
+                        </div>
+                        <h3 style="padding:10px 15px;padding-bottom:0px !important;">{{comp.name}} Group</h3>
+                    </div>
+                    <hr>
+                    <p>
+                        <div>
+                            <div class="card card-body">
+                              <center>
+                                <a class="btn btn-primary btn-xl" data-bs-toggle="collapse" href="{{comp.internship_link}}"  style="width: 100%;height: 64px;font-size: 20px;padding: 16px 11px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" target="_blank">
+                                    Apply for Cohort Program
+                                </a>
+                              </center>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- INTERNSHIP -->
+                        <div>
+                            <div class="card card-body">
+                              <center>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="{{comp.internship_link}}"  style="width: 100%;height: 64px;font-size: 20px;padding: 16px 11px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" target="_blank">
+                                    Apply for Internship 
+                                </a>
+                              </center>
+                            </div>
+                        </div>
+                    </p>
+                   
+                </div>
+                <div id="others_section{{comp.id}}" style="display: none;">
+                    <div class="eng" style="display: flex;">
+                        <div class="logo-section">
+                            <img src="{{ comp.logo.url }}" alt=""  style="width: 50px;height: 50px;object-fit: contain;">
+                        </div>
+                        <h3 style="padding:10px 15px;padding-bottom:0px !important;">{{comp.name}} Group</h3>
+                    </div>
+                    <hr>
+                    <p>
+                        <div>
+                            <div class="card card-body">
+                              <center>
+                                <a class="btn btn-primary btn-xl" data-bs-toggle="collapse" href="{{comp.internship_link}}"  style="width: 100%;height: 64px;font-size: 20px;padding: 16px 11px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" target="_blank">
+                                    Apply for Cohort Program 
+                                </a>
+                              </center>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <!-- INTERNSHIP -->
+                        <div>
+                            <div class="card card-body">
+                              <center>
+                                <a class="btn btn-primary" data-bs-toggle="collapse" href="{{comp.internship_link}}"  style="width: 100%;height: 64px;font-size: 20px;padding: 16px 11px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" target="_blank">
+                                    Apply for Internship
+                                </a>
+                              </center>
+                            </div>
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <!-- second section -->
+            <div class="section-2">
+                    <div id="engineering{{comp.id}}">
+                        <div class="square">
+                            {% for vid in engineering_video %}
+                                {% if vid.company.id == comp.id %}
+                                    {{ vid.code | safe }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>  
+                    <div id="fin{{comp.id}}" style="display: none;">
+                        <div class="square">
+                            {% for vid in finance_video %}
+                                {% if vid.company.id == comp.id %}
+                                    {{ vid.code | safe }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div id="others{{comp.id}}"  style="display: none;">
+                        <div class="square">
+                            {% for vid in others_video %}
+                                {% if vid.company.id == comp.id %}
+                                    {{ vid.code | safe }}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                <br>
+                <div class="container-flex">
+                    <button type="button" class="btn btn-secondary" onclick="engineering('{{comp.id}}')" style="width:32%;height: 40px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" id="engineering_btn{{comp.id}}">Engineering</button>
+                    <button type="button" class="btn btn-primaryy" onclick="fin('{{comp.id}}')" style="width: 32%;height: 40px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223);" id="fin_btn{{comp.id}}">Finance</button>
+                    <button type="button" class="btn btn-primaryy" onclick="others('{{comp.id}}')" style="width: 33%;height: 40px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;" id="others_btn{{comp.id}}">Marketing</button>
+                </div>
+                <br>
+                <div>
+                    <div>
+                      <br>
+                      <center>
+                        <a class="btn btn-primary" href="#" style="width:100%;height: 42px;font-size: 18px;background-color: rgb(78,115,223) ;border-color: rgb(78,115,223) ;">
+                           Visit Website
+                        </a>
+                      </center>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<br><br>
+  <!-- Company Tree Start -->
+<div class="container" id="comp_tree" style="display: none;">
+    <center>
+    <h3>
+       ' स्कोप के छ ?'
+    </h3>
+    </center>
+<br><br>
+    <div class="row col-md-12">
+        {% for comp in company_info %}
+        <div class=" card col-md-3" style="margin: 0px 15px;">
+            <img src="{{ comp.logo.url }}" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#id{{comp.id}}" style="object-fit: contain;">
+            <div class="card-body">
+            <center>
+              <h5 class="card-title">{{ comp.name }}</h5>
+            </center>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+  <div class="body genealogy-body genealogy-scroll"  style="display: none;">
+    <div class="genealogy-tree">
+        <ul>
+            <li>
+                <a href="javascript:void(0);">
+                    <div class="member-view-box">
+                        <div class="member-image">
+                           <!-- add icon  -->
+                            <div class="member-details">
+                                <h3>Company</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- sub category of Career Paths - 1 -->
+                <ul class="active">
+                    {% for comp in company_info %}
+                        <li>
+                            <a href="javascript:void(0);">
+                                <div class="member-view-box">
+                                    <div class="member-image">
+                                        <div class="member-detailss">
+                                            
+                                            <h3 data-bs-toggle="modal" data-bs-target="#id{{comp.id}}">{{ comp.name }}</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </li>
+        </ul>
+    </div>
+  </div>
+  {% include 'components/footer.html' %}
+<script>
+
+    function frontend(){
+        document.getElementById("front-endd").style.background = "#6c757d";
+        document.getElementById("front-endd").style.border = "1px solid #6c757d";
+        document.getElementById("back-endd").style.background = "#4e73df";
+        document.getElementById("back-endd").style.border = "1px solid #4e73df";
+        document.getElementById("full-stackk").style.background = "#4e73df";
+        document.getElementById("full-stackk").style.border = "#4e73df";
+
+        document.getElementById("front-end").style.display = "block";
+        document.getElementById("back-end").style.display = "none";
+        document.getElementById("full-stack").style.display = "none";
+    }
+    function backend(){
+        document.getElementById("front-endd").style.background = "#4e73df";
+        document.getElementById("front-endd").style.border = "1px solid #4e73df";
+        document.getElementById("back-endd").style.background = "#6c757d";
+        document.getElementById("back-endd").style.border = "1px solid #6c757d";
+        document.getElementById("full-stackk").style.background = "#4e73df";
+        document.getElementById("full-stackk").style.border = "1px solid #4e73df";
+
+        document.getElementById("back-end").style.display = "block";
+        document.getElementById("front-end").style.display = "none";
+        document.getElementById("full-stack").style.display = "none";
+    }
+    function fullstack(){
+        document.getElementById("front-endd").style.background = "#4e73df";
+        document.getElementById("front-endd").style.border = "1px solid #4e73df";
+        document.getElementById("back-endd").style.background = "#4e73df";
+        document.getElementById("back-endd").style.border = "1px solid #4e73df";
+        document.getElementById("full-stackk").style.background = "#6c757d";
+        document.getElementById("full-stackk").style.border = "1px solid #6c757d";
+
+        document.getElementById("full-stack").style.display = "block";
+        document.getElementById("front-end").style.display = "none";
+        document.getElementById("back-end").style.display = "none";
+    }
+
+    function engineering(id){
+        document.getElementById("fin_btn"+id).style.background = "#4e73df";
+        document.getElementById("fin_btn"+id).style.border = "1px solid #4e73df";
+        document.getElementById("engineering_btn"+id).style.background = "#6c757d";
+        document.getElementById("engineering_btn"+id).style.border = "1px solid #6c757d";
+        document.getElementById("others_btn"+id).style.background = "#4e73df";
+        document.getElementById("others_btn"+id).style.border = "1px solid #4e73df";
+        
+        document.getElementById("engineering"+id).style.display = "block";
+        document.getElementById("fin"+id).style.display = "none";
+        document.getElementById("others"+id).style.display = "none";
+        document.getElementById("engineering_section"+id).style.display = "block";
+        document.getElementById("fin_section"+id).style.display = "none";
+        document.getElementById("others_section"+id).style.display = "none";
+    }
+    function fin(id){
+        document.getElementById("fin_btn"+id).style.background = "#6c757d";
+        document.getElementById("fin_btn"+id).style.border = "1px solid #6c757d";
+        document.getElementById("engineering_btn"+id).style.background = "#4e73df";
+        document.getElementById("engineering_btn"+id).style.border = "1px solid #4e73df";
+        document.getElementById("others_btn"+id).style.background = "#4e73df";
+        document.getElementById("others_btn"+id).style.border = "1px solid #4e73df";
+
+        document.getElementById("fin"+id).style.display = "block";
+        document.getElementById("engineering"+id).style.display = "none";
+        document.getElementById("others"+id).style.display = "none";
+        document.getElementById("engineering_section"+id).style.display = "none";
+        document.getElementById("fin_section"+id).style.display = "block";
+        document.getElementById("others_section"+id).style.display = "none";
+    }
+    function others(id){
+        document.getElementById("others_btn"+id).style.background = "#6c757d";
+        document.getElementById("others_btn"+id).style.border = "1px solid #6c757d";
+        document.getElementById("engineering_btn"+id).style.background = "#4e73df";
+        document.getElementById("engineering_btn"+id).style.border = "1px solid #4e73df";
+        document.getElementById("fin_btn"+id).style.background = "#4e73df";
+        document.getElementById("fin_btn"+id).style.border = "1px solid #4e73df";
+
+        document.getElementById("others"+id).style.display = "block";
+        document.getElementById("engineering"+id).style.display = "none";
+        document.getElementById("fin"+id).style.display = "none";
+        document.getElementById("engineering_section"+id).style.display = "none";
+        document.getElementById("fin_section"+id).style.display = "none";
+        document.getElementById("others_section"+id).style.display = "block";
+    }
+</script>
+<!-- import jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        // when click on resurces and company then toggle the active class
+        $('#comp').click(function () {
+            $('#comp').addClass('active');
+            $('#resource').removeClass('active');
+            $('#comp_tree').show();
+            $('#resource_tree').hide();
+        });
+        $('#resource').click(function () {
+            $('#resource').addClass('active');
+            $('#comp').removeClass('active');
+            $('#comp_tree').hide();
+            $('#resource_tree').show();
+        });
+        $('.genealogy-tree ul').hide();
+        $('.genealogy-tree>ul').show();
+        $('.genealogy-tree ul.active').show();
+        $('.genealogy-tree li').on('click', function (e) {
+        var children = $(this).find('> ul');
+        if (children.is(":visible")) children.hide('fast').removeClass('active');
+        else children.show('fast').addClass('active');
+        e.stopPropagation();
+        });
+    });
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>

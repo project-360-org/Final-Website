@@ -1,0 +1,278 @@
+/* import poppins */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+body{
+    width: 100vw;
+    height: 100vh !important;
+    background-color: #f8f9fc;
+    overflow-y: hidden;
+}
+.body{
+    transition: all 0.3s ease-in-out;
+}
+/*----------------genealogy-scroll----------*/
+
+.genealogy-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+.genealogy-scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e4e4e4;
+}
+.genealogy-scroll::-webkit-scrollbar-thumb {
+    background: #212121;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.genealogy-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d5b14c;
+    transition: 0.5s;
+}
+
+
+/*----------------genealogy-tree----------*/
+.genealogy-body{
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding-top: 10px;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+.genealogy-tree{
+  display: inline-block;
+}
+.genealogy-tree ul {
+    padding-top: 20px; 
+    position: relative;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+}
+.genealogy-tree li {
+    float: left; text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 7px 5px 0 5px;
+}
+.genealogy-tree li::before, .genealogy-tree li::after{
+    content: '';
+    position: absolute; 
+    top: 0; 
+    right: 50%;
+    border-top: 2px solid #ccc;
+    width: 50%; 
+    height: 18px;
+}
+.genealogy-tree li::after{
+    right: auto; left: 50%;
+    border-left: 2px solid #ccc;
+}
+.genealogy-tree li:only-child::after, .genealogy-tree li:only-child::before {
+    display: none;
+}
+.genealogy-tree li:only-child{ 
+    padding-top: 0;
+}
+.genealogy-tree li:first-child::before, .genealogy-tree li:last-child::after{
+    border: 0 none;
+}
+.genealogy-tree li:last-child::before{
+    border-right: 2px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+.genealogy-tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+.genealogy-tree ul ul::before{
+    content: '';
+    position: absolute; top: 0; left: 50%;
+    border-left: 2px solid #ccc;
+    width: 0; height: 20px;
+}
+.genealogy-tree li a{
+    text-decoration: none;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.genealogy-tree li a:hover+ul li::after, 
+.genealogy-tree li a:hover+ul li::before, 
+.genealogy-tree li a:hover+ul::before, 
+.genealogy-tree li a:hover+ul ul::before{
+    border-color:  #fbba00;
+}
+
+/*--------------memeber-card-design----------*/
+.member-view-box{
+    padding: 0px 100px;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    left: -13%;
+}
+.member-image{
+    width: 73px;
+    position: relative;
+}
+.member-image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    background-color :#000;
+    z-index: 1;
+}
+/* add the member details in a box */
+.member-details h3{
+    width: 150px;
+    max-width:  150px;
+    padding: 24px;
+    /* border: 1px solid #ccc; */
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(58 59 69 / 15%) !important;
+}
+
+.member-detailss h3{
+    width: 150px;
+    max-width:  150px;
+    padding: 24px;
+    /* border: 1px solid #ccc; */
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 0px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(58 59 69 / 15%) !important;
+    z-index:99;
+}
+
+.sidebar{
+    height: 98%;
+    /* width should bew 1 3rd of the screen; */
+    width: 25%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999;
+    overflow: auto;
+    left: 74%;
+    top: 1%;
+    bottom: 4%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(58 59 69 / 15%) !important;  
+    transition: all 1.5s ease-in-out;
+    font-family: 'Poppins', sans-serif !important;
+}
+.sidebar2{
+    height: 98%;
+    width: 24%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 9999; 
+    overflow: auto;
+    top: 1%;
+    bottom: 4%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(58 59 69 / 15%) !important;  
+    transition: all 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h1, h2 , h3, h4, h5, h6,p{
+    font-family: 'Poppins', sans-serif !important;
+}
+.square {
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.square iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.transition{
+    transition: 0.5s;
+    display: block;
+}
+/* popup modal */
+.model-footer{
+    justify-content: space-around !important;
+}
+.modal-header{
+    display: block !important;
+}
+
+/* checkbox */
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    appearance: none;
+    --webkit-appearance: none;
+}
+
+.toggler{
+    float: right;
+    padding: 15px;
+}
+
+.display{
+    visibility: hidden;
+}
+
+/* sections */
+.section-1{
+    width: 50%;
+    padding: 10px 10px;
+    border-right: #000 1px solid;
+}
+.section-2{
+    width: 50%;
+    padding: 0px 10px;
+}
+
+.row{
+    justify-content: space-around;
+}
+img{
+    cursor: pointer;
+}
+
+.card-img-top{
+    padding-top: 5px;
+    height: 193px;
+}
+a{
+    cursor: pointer;
+ }
+
+ .btn-primaryy{
+    background-color: rgb(78,115,223) ;
+    border-color: rgb(78,115,223) ;
+    color: #fff !important;
+    border:none;
+ }

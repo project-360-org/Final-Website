@@ -77,6 +77,10 @@
             .navbar h3{
                 padding: 13px;
             }
+            .navbar img{
+                width: 50px;
+    height: 50px;
+            }
         </style>
 		<body>
 			<!--about-us start -->
@@ -88,11 +92,13 @@
 		<section   class="testemonial">
 			<div class="container">
 				<div class="section-header text-center">
-					<h2>
+					<h1>
+                        <b>
 						<span>
-							From Our Founders
+							Founders
 						</span>
-					</h2>
+                        </b>
+					</h1>
 				</div><!--/.section-header-->
 				<div class="owl-carousel owl-theme" id="testemonial-carousel">
 					<div class="home1-testm item">
@@ -104,8 +110,8 @@
 								<span class="icon section-icon">
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
-								<p>
-									Kailash graduated from Middlebury College in the US with a degree in Computer Science and Economics. He will be joining Harvard Kennedy School in the near future for his graduate study. He has been working at Precision Development, a non-profit led by a Nobel laureate and other experts at the forefront of behavioral economics, where he spearheaded both technical and strategic fronts on the applications of satellite remote sensing for large-scale Randomized Controlled Trials (RCTs).<br> His experience also includes investment due diligence for a multimillion-dollar revolving fund that aims to enable thousands of smallholder farmers to improve their livelihoods through climate adaptation. 
+								<p style="font-size: 2rem;">
+									Kailash graduated from Middlebury College in the US with a degree in Computer Science and Economics. He will be joining Harvard Kennedy School in the near future for his graduate study. He has been working at Precision Development, a non-profit led by a Nobel laureate and other experts at the forefront of behavioral economics, where he spearheaded both technical and strategic fronts on the applications of satellite remote sensing for large-scale Randomized Controlled Trials (RCTs).<br> His experience also includes investment due diligence for a multimillion-dollar revolving fund that aims to enable thousands of smallholder farmers to improve their livelihoods through climate adaptation.He is passionate about making systems-level changes in food security, educational access, and health equity. 
 
 								</p>
 								<h3>
@@ -126,7 +132,7 @@
 								<span class="icon section-icon">
 									<i class="fa fa-quote-left" aria-hidden="true"></i>
 								</span>
-								<p>
+								<p style="font-size: 2rem;">
                                     Himal is currently a second-year student at Williams College, MA with an interest in the intersection between Neuroscience and Computer Science. He has worked in microbiology research with a Nobel laureate during his high school, and chronobiology research at college. Both Kailash and Himal are passionate about making systems-level changes in education equity.
 								</p>
 								<h3>
@@ -138,27 +144,7 @@
 							</div><!--/.home1-testm-txt-->	
 						</div><!--/.home1-testm-single-->
 					</div><!--/.item-->
-					<div class="home1-testm item">
-						<div class="home1-testm-single text-center">
-							<div class="home1-testm-img">
-								<img src="{% static 'assetss/images/client/testimonial1.jpg' %}" alt="img"/>
-							</div><!--/.home1-testm-img-->
-							<div class="home1-testm-txt">
-								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
-								</span>
-								<p>
-									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
-								</p>
-								<h3>
-									<a href="#">
-										kevin watson
-									</a>
-								</h3>
-								<h4>CEO, Kingston</h4>
-							</div><!--/.home1-testm-txt-->	
-						</div><!--/.home1-testm-single-->
-					</div><!--/.item-->
+					
 				</div><!--/.testemonial-carousel-->
 			</div><!--/.container-->
 	
@@ -174,7 +160,7 @@
 								<h1>
 									<span>
                                         <b>
-										Our Missions and Visions
+										Our Mission and Vision
                                         </b>
 									</span>
 								</h1>
@@ -250,7 +236,7 @@
 				<div class="team-details">
 					<div class="project-header team-header text-left">
                         <center>
-						<h2>Our expert team</h2>
+						<h2>Our Team</h2>
                     </center>
 						<p>
 						</p>
@@ -263,8 +249,10 @@
 										<div class="single-team-box team-box-bg-1">
 											<div class="team-box-inner">
 												<h3>Binayak Jha</h3>
-												<p class="team-meta"></p>
-												<a href="#" class="learn-btn">
+												<p class="team-meta">
+                                                    Tech
+                                                </p>
+												<a href="https://www.facebook.com/binayak.jha.py/" class="learn-btn" target="_blank">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -276,8 +264,9 @@
 											<div class="team-box-inner">
 												<h3>Shreeda Rijal</h3>
 												<p class="team-meta">
+                                                    Design and Marketing
 												</p>
-												<a href="#" class="learn-btn">
+												<a href="https://www.facebook.com/Shreedaa.a" class="learn-btn" target="_blank">
 													learn more
 												</a>
 											</div><!--/.team-box-inner-->
@@ -288,6 +277,7 @@
 											<div class="team-box-inner">
 												<h3>Ayush Gautam</h3>
 												<p class="team-meta">
+                                                    Tech
 												</p>
 												<a href="#" class="learn-btn">
 													learn more
@@ -298,8 +288,9 @@
                                     <div class="col-sm-3 col-xs-12">
 										<div class="single-team-box team-box-bg-4">
 											<div class="team-box-inner">
-												<h3>मनिष भट्टराई</h3>
+												<h3>Manish Bhattarai</h3>
 												<p class="team-meta">
+                                                    Tech
 												</p>
 												<a href="#" class="learn-btn">
 													learn more
@@ -312,7 +303,7 @@
 											<div class="team-box-inner">
 												<h3>Leman Gautam</h3>
 												<p class="team-meta">
-													Head, Legal Advising
+													Tech
 												</p>
 												<a href="#" class="learn-btn">
 													learn more
@@ -320,6 +311,7 @@
 											</div><!--/.team-box-inner-->
 										</div><!--/.single-team-box-->
 									</div><!--.col-->
+                                    
 								</div><!--/.team-carousel-->
 							</div><!--/.row-->
 						</div><!--/.container-->
